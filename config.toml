@@ -5,7 +5,7 @@ description = "Solving problems"
 theme = "hugo-theme-cactus"
 
 [params]
-  custom_js = ["js/elastic-apm-rum.umd.min.js"]
+  custom_js = ["/js/elastic-apm-rum.umd.min.js"]
   twitter = "paulgrav"
   colortheme = "dark"
   mainSection = "posts"
