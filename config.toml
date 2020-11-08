@@ -4,6 +4,8 @@ title = "Paul Grave"
 description = "Solving problems" 
 theme = "hugo-theme-cactus"
 
+custom_js = ["js/elastic-apm-rum.umd.min.js"]
+
 [params]
   twitter = "paulgrav"
   colortheme = "dark"

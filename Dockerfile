@@ -8,5 +8,5 @@ RUN tar xzvf hugo_${HUGO_VERSION}_Linux-${ARCH}.tar.gz
 RUN chmod +x hugo
 RUN ./hugo
 
-FROM nginx
+FROM --platform=arm64 nginx
 COPY --from=hugo /html/public /usr/share/nginx/html
