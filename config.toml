@@ -1,4 +1,4 @@
-baseURL = "http://blog.hespera.net/"
+baseURL = "https://blog.hespera.net/"
 languageCode = "en-us"
 title = "Paul Grave"
 description = "Solving problems" 
