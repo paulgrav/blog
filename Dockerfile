@@ -1,0 +1,12 @@
+FROM debian:buster-slim as hugo
+ARG ARCH=ARM64
+ARG HUGO_VERSION=0.78.1
+WORKDIR /html
+COPY . .
+ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-${ARCH}.tar.gz .
+RUN tar xzvf hugo_${HUGO_VERSION}_Linux-${ARCH}.tar.gz
+RUN chmod +x hugo
+RUN ./hugo
+
+FROM nginx
+COPY --from=hugo /html/public /usr/share/nginx/html

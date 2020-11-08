@@ -1,0 +1,35 @@
+baseURL = "http://blog.hespera.net/"
+languageCode = "en-us"
+title = "Paul Grave"
+description = "Solving problems" 
+theme = "hugo-theme-cactus"
+
+[params]
+  twitter = "paulgrav"
+  colortheme = "dark"
+  mainSection = "posts"
+  [params.comments]
+    enabled = true
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/paulgrav"
+
+[[params.social]]
+  name = "twitter"
+  link = "https://twitter.com/paulgrav"
+  
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
