@@ -1,5 +1,5 @@
 FROM debian:buster-slim as hugo
-ARG ARCH=ARM64
+ARG ARCH=64bit
 ARG HUGO_VERSION=0.78.1
 WORKDIR /html
 COPY . .
