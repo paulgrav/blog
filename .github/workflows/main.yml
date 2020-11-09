@@ -41,8 +41,8 @@ jobs:
 
           git init
           git config --global push.default matching
-          git config --global user.email "${GitHubEMail}"
-          git config --global user.name "${GitHubUser}"
+          git config --global user.email "github@stomer.net"
+          git config --global user.name "Github Blog"
           git add --all .
           git commit -m "Publishing to master (GH action)"
-          git push --quiet --force https://${GitHubKEY}@github.com/${GitHubUser}/${GitHubRepo}.git master
+          git push --quiet --force https://${secret.GitHubKEY}@github.com/paulgrav/paulgrav.github.io.git master
