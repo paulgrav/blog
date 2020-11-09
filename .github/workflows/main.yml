@@ -34,8 +34,7 @@ jobs:
       
       - name: Build Site
         run: |
-          ls -ltR
-          hugo
+          hugo --minify
 
       # Runs a set of commands using the runners shell
       - name: Deploy
