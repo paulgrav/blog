@@ -45,4 +45,4 @@ jobs:
           git config --global user.name "Github Blog"
           git add --all .
           git commit -m "Publishing to master (GH action)"
-          git push --quiet --force https://${secret.token}@github.com/paulgrav/paulgrav.github.io.git master
+          git push --quiet --force https://${secret.TOKEN}@github.com/paulgrav/paulgrav.github.io.git master
