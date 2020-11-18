@@ -11,7 +11,7 @@ theme = "hugo-theme-cactus"
   colortheme = "dark"
   mainSection = "posts"
   [params.comments]
-    enabled = true
+    enabled = false
 
 [[params.social]]
   name = "github"
