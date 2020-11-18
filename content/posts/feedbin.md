@@ -14,6 +14,8 @@ keywords:
 
 ![](/images/ios12-shortcuts-app-icon_2x.png)
 
+[Get the Shortcut here](https://www.icloud.com/shortcuts/b53fda3abb55403f932dc6859100e535)
+
 Over the years I’ve used multiple read-it-later services on my iOS devices. From Instapaper, Pocket, and Apple’s own Reading List and for various reasons none of them has stuck with me. There has always been something that I’ve not quite liked about those services. 
 
 Fast forward to 2020 and I think I finally found the ideal solution. It avoids running additional apps, and it’s free (sort of).
