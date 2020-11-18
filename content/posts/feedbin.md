@@ -25,6 +25,6 @@ Could I write an iOS Shortcut that calls the Feedbin API to save articles to the
 
 The Shortcut will ask for your Feedbin credentials (I wish Feedbin provided API tokens), and they’re used to authenticate an API call to the following endpoint: https://api.feedbin.com/v2/pages.json. Once installed you tap on Feedbin Pages in the Share Sheet.
 
-![](/images/feedbin-sharesheet.png)
-
 [Get the Shortcut here](https://www.icloud.com/shortcuts/b53fda3abb55403f932dc6859100e535)
+
+![](/images/feedbin-sharesheet.jpg)
