@@ -1,7 +1,7 @@
 ---
 title: "An iOS Shortcut for Feedbin’s read-it-later service"
 date: 2020-11-18T18:02:28Z
-draft: true
+draft: false
 tags:
   - projects
   - shortcuts
