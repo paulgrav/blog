@@ -19,9 +19,9 @@ Fast forward to 2020 and I think I finally found the ideal solution. It avoids r
 
 [FeedBin](https://feedbin.com) is subscription-based RSS feed aggregation service that I use with NetNewsWire. NetNewsWire and Feedbin go great together.
 
-Back in August 2019 FeedBin launched its own [read-it-later capability](https://feedbin.com/blog/2019/08/20/save-webpages-to-read-later/) but I never used it because I found it difficult to send articles to it. Bookmarklets are what Feedbin recommends but whilst they work fine on desktop browsers, they are clunky to use in mobile web browsers and are useless when not using a web browser.
+Back in August 2019 FeedBin launched its own [read-it-later capability](https://feedbin.com/blog/2019/08/20/save-webpages-to-read-later/) but I never used it because I found it difficult to send articles to it. Bookmarklets are what Feedbin recommends but whilst they work fine on desktop browsers, they are clunky or impossible to use on mobile devices.
 
-Could I write an iOS Shortcut that calls the Feedbin API to save articles to the read-it-later service? Turns out it’s easy. The great thing about Shortcuts is that you can call them from almost any context on iOS, and not just a web browser.
+Better than a Bookmarklet is an iOS Shortcut that calls the Feedbin API to save articles to the read-it-later service. Turns out it’s easy to create. The great thing about Shortcuts is that you can call them from almost any context on iOS, and not restrict to a web browser like a Bookmarklet would be.
 
 The Shortcut will ask for your Feedbin credentials (I wish Feedbin provided API tokens), and they’re used to authenticate an API call to the following endpoint: https://api.feedbin.com/v2/pages.json. Once installed you tap on Feedbin Pages in the Share Sheet.
 
