@@ -4,12 +4,15 @@ date: 2020-11-18T18:02:28Z
 draft: true
 tags:
   - projects
+  - shortcuts
 keywords:
   - rss
   - shortcuts
   - iOS
   - feedbin
 ---
+
+![](/images/ios12-shortcuts-app-icon_2x.png)
 
 Over the years I’ve used multiple read-it-later services on my iOS devices. From Instapaper, Pocket, and Apple’s own Reading List and for various reasons none of them has stuck with me. There has always been something that I’ve not quite liked about those services. 
 
