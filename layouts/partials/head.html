@@ -6,18 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  
+
   {{ range .Site.Params.custom_js -}}
   <script src="{{ . }}" ></script>
-  {{- end }} 
+  {{- end }}
 
-  <script>
-    elasticApm.init({
-      serviceName: 'blog',
-      serverUrl: 'https://telemetry.hespera.net',
-    })
-  </script>
-  
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
   {{ .Scratch.Set "colortheme" "white"}}

@@ -1,11 +1,11 @@
 baseURL = "https://blog.hespera.net/"
 languageCode = "en-us"
 title = "Paul Grave"
-description = "Solving problems" 
+description = "Solving problems"
 theme = "hugo-theme-cactus"
 
 [params]
-  custom_js = ["/js/elastic-apm-rum.umd.min.js"]
+  custom_js = ["/js/trace.js"]
   gravatar = "paul@stomer.net"
   twitter = "paulgrav"
   colortheme = "dark"
@@ -20,7 +20,7 @@ theme = "hugo-theme-cactus"
 [[params.social]]
   name = "twitter"
   link = "https://twitter.com/paulgrav"
-  
+
 [[menu.main]]
 name = "Home"
 url = "/"
