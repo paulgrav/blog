@@ -8,9 +8,7 @@ RUN tar xzvf hugo_${HUGO_VERSION}_Linux-${ARCH}.tar.gz
 RUN chmod +x hugo
 RUN npm install
 RUN npm run build
-RUN ./hugo --minify -v
-RUN ls -ltR public
+RUN ./hugo --minify
 
 FROM --platform=arm64 nginx
-RUN rm -rf /usr/share/nginx/html/*
 COPY --from=hugo /html/public /usr/share/nginx/html
