@@ -24,7 +24,6 @@ const provider = new WebTracerProvider({
   ),
 });
 
-// provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
 provider.addSpanProcessor(new SimpleSpanProcessor(new CollectorTraceExporter(collectorOptions)));
 
 provider.register({
@@ -40,7 +39,5 @@ registerInstrumentations({
     new DocumentLoadInstrumentation(),
   ],
 });
-
-
 
 const webTracerWithZone = provider.getTracer('default');

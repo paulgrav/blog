@@ -6,7 +6,7 @@ module.exports = {
     trace: './src/js/otel.js',
   },
   output: {
-    path: path.resolve(__dirname, 'static/js'),
+    path: path.resolve(__dirname, 'assets/js'),
     filename: '[name].js',
     sourceMapFilename: '[file].map',
   },

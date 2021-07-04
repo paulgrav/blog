@@ -5,7 +5,6 @@ description = "Solving problems"
 theme = "hugo-theme-cactus"
 
 [params]
-  custom_js = ["/js/trace.js"]
   gravatar = "paul@stomer.net"
   twitter = "paulgrav"
   colortheme = "dark"
