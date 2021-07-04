@@ -6,6 +6,8 @@ import { WebTracerProvider } from '@opentelemetry/web';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
 import { DocumentLoadInstrumentation } from '@opentelemetry/instrumentation-document-load';
 import { CompositePropagator, HttpTraceContextPropagator } from '@opentelemetry/core';
+import { ResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { Resource } from '@opentelemetry/resources';
 
 const collectorOptions = {
       url: 'https://telemetry.hespera.net/v1/trace', // url is optional and can be omitted - default is http://localhost:55681/v1/trace
@@ -13,7 +15,15 @@ const collectorOptions = {
       concurrencyLimit: 10, // an optional limit on pending requests
 };
 
-const provider = new WebTracerProvider();
+
+const provider = new WebTracerProvider({
+  resource: Resource.default().merge(
+    new Resource({
+      [ResourceAttributes.SERVICE_NAME]: 'blog',
+    })
+  ),
+});
+
 // provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
 provider.addSpanProcessor(new SimpleSpanProcessor(new CollectorTraceExporter(collectorOptions)));
 
@@ -31,4 +41,6 @@ registerInstrumentations({
   ],
 });
 
-const webTracerWithZone = provider.getTracer('example-tracer-web');
+
+
+const webTracerWithZone = provider.getTracer('default');
